@@ -1,0 +1,19 @@
+{
+    "name": "ClusterLab.UseCase",
+    "rootNamespace": "",
+    "references": [
+        "UniTask",
+        "UniRx",
+        "ClusterLab.Domain",
+        "ClusterLab.Infrastructure"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": false,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

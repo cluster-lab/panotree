@@ -1,0 +1,31 @@
+{
+    "iOSResources": {
+      "mainScene": {
+        "unitySceneName": "venue_d4253f95d84db815f9a0b17612",
+        "assetBundleUrl": "https://file-storage.cluster.mu/assets/venues/assetbundle/group_31e069f6cb8e1bb3a7d3e159e0/venue_d4253f95d84db815f9a0b17612/vup_c0fd27d2fa854efd8be32544e0/vf_7627080071ce48089785065521.ios"
+      },
+      "subScenes": null
+    },
+    "winResources": {
+      "mainScene": {
+        "unitySceneName": "venue_d4253f95d84db815f9a0b17612",
+        "assetBundleUrl": "https://file-storage.cluster.mu/assets/venues/assetbundle/group_31e069f6cb8e1bb3a7d3e159e0/venue_d4253f95d84db815f9a0b17612/vup_c0fd27d2fa854efd8be32544e0/vf_3bb2375f0304abe691ba9eb51d.win"
+      },
+      "subScenes": null
+    },
+    "macResources": {
+      "mainScene": {
+        "unitySceneName": "venue_d4253f95d84db815f9a0b17612",
+        "assetBundleUrl": "https://file-storage.cluster.mu/assets/venues/assetbundle/group_31e069f6cb8e1bb3a7d3e159e0/venue_d4253f95d84db815f9a0b17612/vup_c0fd27d2fa854efd8be32544e0/vf_16c19f1e5c104c44ec6bb5af46.mac"
+      },
+      "subScenes": null
+    },
+    "androidResources": {
+      "mainScene": {
+        "unitySceneName": "venue_d4253f95d84db815f9a0b17612",
+        "assetBundleUrl": "https://file-storage.cluster.mu/assets/venues/assetbundle/group_31e069f6cb8e1bb3a7d3e159e0/venue_d4253f95d84db815f9a0b17612/vup_c0fd27d2fa854efd8be32544e0/vf_b12a093f6208ca6d75b29c0be2.android"
+      },
+      "subScenes": null
+    }
+  }
+  

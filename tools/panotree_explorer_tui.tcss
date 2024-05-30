@@ -1,0 +1,42 @@
+Screen {
+    background: $surface-darken-1;
+}
+
+#tree-view {
+    width: 100%;
+    scrollbar-gutter: stable;
+    max-height: 100%;
+}
+
+#left-pane {
+    width: 50%;
+    height: auto;
+    overflow: auto;
+    max-height: 100%;
+    dock: left;
+}
+
+#right-pane {
+    width: 50%;
+    height: auto;
+    scrollbar-gutter: stable;
+    max-height: 100%;
+    dock: right;
+}
+
+#status {
+    width: 100%;
+    height: 20%;
+    dock: bottom;
+}
+
+MLPhotoExplorerApp.-show-tree #tree-view {
+    display: block;
+    max-width: 100%;
+}
+
+
+#log {
+    overflow: auto scroll;
+    width: 100%;
+}
