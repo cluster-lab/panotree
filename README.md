@@ -5,7 +5,7 @@
 
 This is the code for PanoTree: Automated Photospot Explorer in Virtual Reality Scenes
 
-* [Project Page](https://cluster-lab.github.io/)
+* [Project Page](https://cluster-lab.github.io/panotree)
 * [Paper](https://lab.cluster.mu/)
 * [Video](https://lab.cluster.mu/)
 
