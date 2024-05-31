@@ -7,13 +7,6 @@
       "dependencies": {},
       "hash": "72e620d169841f32bc6110ad0e12ee9eae6f1aaf"
     },
-    "com.neuecc.unirx": {
-      "version": "https://github.com/ClusterVR/UniRx.git?path=Assets/Plugins/UniRx/Scripts#7.1.0-cluster",
-      "depth": 0,
-      "source": "git",
-      "dependencies": {},
-      "hash": "e247174011f015ddb510627d32de81c7b829c36b"
-    },
     "com.unity.collab-proxy": {
       "version": "1.15.16",
       "depth": 0,
