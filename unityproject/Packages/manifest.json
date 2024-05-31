@@ -1,7 +1,7 @@
 {
   "dependencies": {
     "com.cysharp.unitask": "https://github.com/Cysharp/UniTask.git?path=src/UniTask/Assets/Plugins/UniTask#2.2.5",
-    "com.neuecc.unirx": "https://github.com/ClusterVR/UniRx.git?path=Assets/Plugins/UniRx/Scripts#7.1.0-cluster",
+    "com.neuecc.unirx": "https://github.com/neuecc/UniRx.git?path=Assets/Plugins/UniRx/Scripts",
     "com.unity.collab-proxy": "1.15.16",
     "com.unity.feature.development": "1.0.1",
     "com.unity.ide.rider": "3.0.27",
