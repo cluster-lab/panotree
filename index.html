@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html data-theme="light">
+<head>
+    <meta charset="utf-8">
+    <meta name="description"
+          content="PanoTree: Automated Photospot Explorer in Virtual Reality Scenes">
+    <meta name="keywords" content="Reinforcement Learning, Vision Transformer, Tree Search, Social VR">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PanoTree: Automated Photospot Explorer in Virtual Reality Scenes</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link rel="stylesheet" href="./static/css/index.css">
+    <link rel="icon" href="./static/images/favicon.ico">
+    <link href="https://use.fontawesome.com/releases/v6.2.0/css/all.css" rel="stylesheet">
+    <script defer src="./static/js/fontawesome.all.min.js"></script>
+    <script>window.MathJax = { MathML: { extensions: ["mml3.js", "content-mathml.js"]}};</script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</head>
+<body>
+
+<section class="hero">
+    <div class="hero-body">
+        <div class="container is-max-desktop">
+            <div class="columns is-centered">
+                <div class="column has-text-centered">
+                    <h1 class="title is-1 publication-title">PanoTree: Automated Photospot Explorer in Virtual Reality
+                        Scenes</h1>
+                    <div class="is-size-5 publication-authors">
+                        <span class="author-block">
+                            <a href="https://lab.cluster.mu/">Tomohiro Hayase</a><sup>1</sup>,
+                        </span>
+                        <span class="author-block">
+                            Braun Sacha<sup>2</sup>,
+                        </span>
+                        <span class="author-block">
+                            <a href="https://lab.cluster.mu/">Hikari Yanagawa</a><sup>1</sup>,
+                        </span>
+                        <span class="author-block">
+                            Itsuki Orito<sup>3</sup>,
+                        </span>
+                        <span class="author-block">
+                            <a href="https://lab.cluster.mu/">Yuichi Hiroi</a><sup>1</sup>,
+                        </span>
+                    </div>
+
+                    <div class="is-size-5 publication-authors">
+                        <span class="author-block"><sup>1</sup>Cluster Metaverse Lab</span>
+                        <span class="author-block"><sup>2</sup>École polytechnique</span>
+                        <span class="author-block"><sup>3</sup>Cluster, Inc</span>
+                    </div>
+                    <div class="column has-text-centered">
+                        <div class="publication-links">
+                            <span class="link-block">
+                                <a href="https://arxiv.org/abs/2405.17136" class="external-link button is-normal is-rounded is-dark">
+                                <span class="icon">
+                                    <i class="fas fa-file-pdf"></i>
+                                </span>
+                                <span>Paper</span>
+                                </a>
+                            </span>
+                            <span class="link-block">
+                                <a href="https://github.com/cluster-lab/panotree"
+                                   class="external-link button is-normal is-rounded is-dark">
+                                    <span class="icon">
+                                        <i class="fab fa-github"></i>
+                                    </span>
+                                    <span>Code</span>
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        ,
+    </div>
+</section>
+
+<section class="section" style="padding-top: 0;">
+    <div class="container is-max-widescreen">
+        <div class="rows">
+            <div class="rows is-centered">
+                <div class="row is-full-width">
+                    <div class="column is-full-width has-text-centered">
+                        <h2 class="title is-3">Exploration</h2>
+                    </div>
+                </div>
+                <div class="row is-full-width">
+                    <div class="columns">
+                        <div class="column video-column">
+                            <iframe src="https://www.youtube.com/embed/StyZhK706MQ?autoplay=1&mute=1&playsinline=1&loop=1&playlist=StyZhK706MQ"
+                                    frameborder="0" allowfullscreen></iframe>
+                        </div>
+
+                        <div class="column video-column">
+                            <iframe src="https://www.youtube.com/embed/W3SLxLO4zJ8?autoplay=1&mute=1&playsinline=1&loop=1&playlist=W3SLxLO4zJ8"
+                                    frameborder="0" allowfullscreen></iframe>
+                        </div>
+
+                        <div class="column video-column">
+                            <iframe src="https://www.youtube.com/embed/0kTbIKNlxh4?autoplay=1&mute=1&playsinline=1&loop=1&playlist=0kTbIKNlxh4"
+                                    frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section" style="padding-top: 0;">
+    <div class="container is-max-widescreen">
+        <div class="rows">
+            <div class="rows is-centered">
+                <div class="row is-full-width">
+                    <div class="column is-full-width has-text-centered">
+                        <h2 class="title is-3">Photospots</h2>
+                    </div>
+                </div>
+                <div class="row is-full-width">
+                    <div class="columns">
+                        <div class="column video-column">
+                            <iframe src="https://www.youtube.com/embed/8huz1n_VJ3E?autoplay=1&mute=1&playsinline=1&loop=1&playlist=8huz1n_VJ3E"
+                                    frameborder="0" allowfullscreen></iframe>
+                        </div>
+
+                        <div class="column video-column">
+                            <iframe src="https://www.youtube.com/embed/huTRw02nqhE?autoplay=1&mute=1&playsinline=1&loop=1&playlist=huTRw02nqhE"
+                                    frameborder="0" allowfullscreen></iframe>
+                        </div>
+
+                        <div class="column video-column">
+                            <iframe src="https://www.youtube.com/embed/qjDZ5qOlPVw?autoplay=1&mute=1&playsinline=1&loop=1&playlist=qjDZ5qOlPVw"
+                                    frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+            <div class="column is-four-fifths">
+                <h2 class="title is-3">Abstract</h2>
+                <div class="content has-text-justified">
+                    <p>
+                        Social VR platforms enable social, economic, and creative activities by allowing users to create and share their own virtual
+                        spaces. In social VR, photography within a VR scene is an important indicator of visitors’ activities. Although automatic identification
+                        of photo spots within a VR scene can facilitate the process of creating a VR scene and enhance the visitor experience, there are
+                        challenges in quantitatively evaluating photos taken in the VR scene and efficiently exploring the large VR scene. We propose PanoTree,
+                        an automated photo-spot explorer in VR scenes. To assess the aesthetics of images captured in VR scenes, a deep scoring network is
+                        trained on a large dataset of photos collected by a social VR platform to determine whether humans are likely to take similar photos.
+                        Furthermore, we propose a Hierarchical Optimistic Optimization (HOO)-based search algorithm to efficiently explore 3D VR spaces
+                        with the reward from the scoring network. Our user study shows that the scoring network achieves human-level performance in
+                        distinguishing randomly taken images from those taken by humans. In addition, we show applications using the explored photo spots,
+                        such as automatic thumbnail generation, support for VR world creation, and visitor flow planning within a VR scene.
+                    </p>
+                    <p>
+                        Keywords: Reinforcement Learning, Vision Transformer, Tree Search, Social VR
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="section" style="padding-top: 0;">
+    <div class="container is-max-widescreen">
+        <div class="rows">
+            <div class="rows is-centered">
+                <div class="row is-full-width">
+                    <div class="columns">
+                        <div class="column feature-column">
+                            <img src="./static/images/panotree_fig4.png" alt="panotree fig4"/>
+                            <p>
+                                Fig. 4. Scoring network of the photo in VR space. The network learns
+                                whether the input image is human-captured or randomly captured and
+                                features the image likely to be captured by a human. The input images
+                                are labeled with 1 for human-captured and 0 for randomly captured.
+                                During the evaluation, for each input image, the network outputs a score
+                                indicating whether the image is likely to have been captured by a human.
+                            </p>
+                        </div>
+
+                        <div class="column feature-column">
+                            <img src="./static/images/panotree_fig6.png" alt="panotree fig6"/>
+                            <p>
+                                Fig. 6. (a) 3D Spatial division and tree structure of the PanoTree. Each
+                                scene is defined as a cuboid and is divided so that the longest edge is
+                                the most likely to be divided. (b) Sampled directional vectors \(\boldsymbol{\delta}_k\) (blue
+                                arrows) in \(N_\mathrm{dir}=15\). Each \(\boldsymbol{\delta}_k\) is a unit vector whose destination (red) is distributed over the unit sphere (green).
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="section" style="padding-top: 0;">
+    <div class="container is-max-widescreen">
+        <div class="rows">
+            <div class="rows is-centered">
+                <div class="row is-full-width">
+                    <div class="column is-full-width has-text-centered">
+                        <h2 class="title is-3">Video</h2>
+                    </div>
+                </div>
+                <div class="row is-full-width">
+                    <div class="columns">
+                        <div class="column video-column">
+                            <iframe src="https://www.youtube.com/embed/AvDRMJX5QGs"
+                                    frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+        <h2 class="title">BibTeX</h2>
+        <pre><code>@misc{hayase2024panotree,
+      title={PanoTree: Autonomous Photo-Spot Explorer in Virtual Reality Scenes},
+      author={Tomohiro Hayase and Braun Sacha and Hikari Yanagawa and Itsuki Orito and Yuichi Hiroi},
+      year={2024},
+      eprint={2405.17136},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}</code></pre>
+    </div>
+</section>
+
+
+<footer class="footer">
+    <div class="container">
+        <div class="content has-text-centered">
+            <a class="icon-link"
+               href="https://arxiv.org/abs/2405.17136">
+                <i class="fas fa-file-pdf"></i>
+            </a>
+            <a class="icon-link" href="https://github.com/cluster-lab/panotree" class="external-link" disabled>
+                <i class="fab fa-github"></i>
+            </a>
+        </div>
+        <div class="columns is-centered">
+            <div class="column is-8">
+                <div class="content">
+                    <p>
+                        This website is licensed under a <a rel="license"
+                                                            href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+                        Commons Attribution-ShareAlike 4.0 International License</a>.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="columns is-centered">
+                <div class="column">
+                    <div class="content has-text-centered">
+                        <p>
+                            Website template borrowed from <a
+                                href="https://github.com/nerfies/nerfies.github.io">NeRFies</a>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
