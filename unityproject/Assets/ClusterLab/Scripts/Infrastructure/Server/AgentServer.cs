@@ -57,11 +57,14 @@ namespace ClusterLab.Infrastructure.Server
                 .Select(address => address.Address.ToString());
         }
 
-        public void StartServer()
+        public void StartServer(List<string> localIPs = null)
         {
             listener = new HttpListener();
             listener.Prefixes.Add("http://" + domain + ":" + port + "/");
-            var localIPs = GetLocalIPs().ToList();
+            if (localIPs == null)
+            {
+                localIPs = GetLocalIPs().ToList();
+            }
             localIPs.ForEach(ip => listener.Prefixes.Add("http://" + ip + ":" + port + "/"));
             localIPs.ForEach(ip => Debug.Log(ip));
             listener.AuthenticationSchemes = AuthenticationSchemes.Anonymous;
