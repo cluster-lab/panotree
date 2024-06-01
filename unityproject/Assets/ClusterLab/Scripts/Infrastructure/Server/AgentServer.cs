@@ -30,12 +30,14 @@ namespace ClusterLab.Infrastructure.Server
 
         readonly string domain;
         readonly int port;
+        readonly List<string> localIPs;
 
         readonly IAgentDriver agentDriver;
         List<AgentServerHandler> handlers;
 
-        public AgentServer(IAgentDriver agentDriver, string domain = "localhost", int port = 8080)
+        public AgentServer(IAgentDriver agentDriver, List<string> localIPs = null, string domain = "localhost", int port = 8080)
         {
+            this.localIPs = localIPs ?? GetLocalIPs().ToList();
             this.domain = domain;
             this.port = port;
             this.agentDriver = agentDriver;
@@ -61,7 +63,6 @@ namespace ClusterLab.Infrastructure.Server
         {
             listener = new HttpListener();
             listener.Prefixes.Add("http://" + domain + ":" + port + "/");
-            var localIPs = GetLocalIPs().ToList();
             localIPs.ForEach(ip => listener.Prefixes.Add("http://" + ip + ":" + port + "/"));
             localIPs.ForEach(ip => Debug.Log(ip));
             listener.AuthenticationSchemes = AuthenticationSchemes.Anonymous;

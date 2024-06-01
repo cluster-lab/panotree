@@ -1,4 +1,5 @@
-﻿using ClusterLab.Infrastructure.Agent;
+﻿using System.Collections.Generic;
+using ClusterLab.Infrastructure.Agent;
 using ClusterLab.Infrastructure.Server;
 using ClusterLab.UseCase.Render;
 using UnityEngine;
@@ -19,6 +20,7 @@ namespace ClusterLab.UseCase
         [SerializeField] TextAsset assetBundleJsonTextAsset;
         [SerializeField] GameObject TileRendererGameObject;
         [SerializeField] GameObject NodeRendererGameObject;
+        [SerializeField] List<string> listeningIPs;
 
         IAgentDriver agentDriver;
         ISceneRenderer sceneRenderer;
@@ -42,7 +44,7 @@ namespace ClusterLab.UseCase
             sceneRenderer = new SceneRendererImpl(tileCameraRenderer);
             agentDriver = new AgentDriverImpl(sceneRenderer, nodeRenderer);
 
-            agentServer = new AgentServer(agentDriver);
+            agentServer = new AgentServer(agentDriver, listeningIPs);
             agentServer.StartServer();
         }
 
