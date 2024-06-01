@@ -44,8 +44,8 @@ namespace ClusterLab.UseCase
             sceneRenderer = new SceneRendererImpl(tileCameraRenderer);
             agentDriver = new AgentDriverImpl(sceneRenderer, nodeRenderer);
 
-            agentServer = new AgentServer(agentDriver);
-            agentServer.StartServer(listeningIPs);
+            agentServer = new AgentServer(agentDriver, listeningIPs);
+            agentServer.StartServer();
         }
 
         void OnDestroy()
