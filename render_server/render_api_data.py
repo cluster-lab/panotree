@@ -58,6 +58,9 @@ class Vector4f(BaseModel):
 
 
 class Bounds(BaseModel):
+    """
+    バウンディングボックス
+    """
     min: Vector3f
     max: Vector3f
 
@@ -71,6 +74,11 @@ class Bounds(BaseModel):
 
 
 class CameraParameter(BaseModel):
+    """
+    カメラパラメータ
+    カメラの位置と姿勢を表す
+    directionとquaternionはどちらか一方を指定する
+    """
     position: Vector3f
     direction: Optional[Vector3f] = None
     quaternion: Optional[Vector4f] = None
@@ -98,6 +106,9 @@ class BoundingBox(BaseModel):
 
 
 class PhotoScoring(BaseModel):
+    """
+    撮影スポットのスコアとカメラパラメータ
+    """
     cameraParameter: CameraParameter
     score: float
 
@@ -117,6 +128,9 @@ class LeafGridNode(BaseModel):
 
 
 class NodeViewModel(BaseModel):
+    """
+    レンダリングサーバー上での表示用のノードビューモデル
+    """
     id: str
     branchId: str | int
     parentId: Optional[str] = None
